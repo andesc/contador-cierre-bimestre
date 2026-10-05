@@ -4,77 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cierre del Bimestre 2A</title>
-
 <style>
-* {
-    box-sizing: border-box;
+*{box-sizing:border-box}
+html,body{width:100%;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:transparent;color:#1f2937}
+.card{
+ width:100%;
+ min-height:300px;
+ padding:clamp(28px,5vw,48px) clamp(20px,5vw,60px);
+ border-radius:14px;
+ background:#f5f7fa;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
 }
-
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: transparent;
-    color: #1f2937;
-}
-
-.card {
-    width: 100%;
-    padding: clamp(14px, 2vw, 22px) clamp(16px, 3vw, 30px);
-    border-radius: 14px;
-    background: #f5f7fa;
-    text-align: center;
-}
-
-.message {
-    max-width: 1100px;
-    margin: 0 auto;
-    font-size: clamp(18px, 2.3vw, 27px);
-    line-height: 1.45;
-    font-weight: 500;
-}
-
-.message strong {
-    font-weight: 700;
-}
-
-.congrats {
-    display: block;
-    margin-top: 8px;
-    font-weight: 700;
-}
-
-@media (max-width: 520px) {
-    .card {
-        padding: 14px 14px;
-        border-radius: 10px;
-    }
-
-    .message {
-        font-size: 18px;
-        line-height: 1.4;
-    }
-
-    .congrats {
-        margin-top: 7px;
-    }
+.message{width:100%;max-width:1100px;margin:0 auto;font-size:clamp(18px,2.2vw,27px);line-height:1.5;font-weight:500}
+.message p{margin:0 0 22px}
+.message p:last-child{margin-bottom:0}
+.message strong{font-weight:700}
+.final{font-weight:700}
+.notice{font-size:clamp(16px,1.8vw,22px);line-height:1.5}
+@media(max-width:520px){
+ .card{min-height:300px;padding:26px 16px;border-radius:10px}
+ .message{font-size:18px;line-height:1.45}
+ .message p{margin-bottom:18px}
+ .notice{font-size:16px}
 }
 </style>
 </head>
-
 <body>
-
 <div class="card">
-    <div class="message">
-        El bimestre <strong>2A</strong> cerró el <strong>domingo 4 de octubre.</strong>
-        El contenido está disponible, pero no es posible completar actividades.
-        <span class="congrats">🎉 Si regularizaste la materia, ¡felicitaciones!</span>
-    </div>
+<div class="message">
+<p>El bimestre <strong>2A</strong> cerró el <strong>domingo 4 de octubre.</strong> El contenido está disponible, pero no es posible completar actividades.</p>
+<p class="final">🎉 Si regularizaste la materia, ¡felicitaciones!</p>
+<p class="notice">Es tiempo de rendir tu <strong>examen final</strong>. Si aún no lo hiciste, inscribite en <strong>Portal alumno / Exámenes.</strong></p>
+<p class="notice">📌 Siempre verificá el vencimiento de cada materia en la pestaña <strong>"Regulares"</strong>.</p>
 </div>
-
+</div>
 </body>
 </html>
