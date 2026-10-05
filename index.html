@@ -4,24 +4,77 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cierre del Bimestre 2A</title>
+
 <style>
-*{box-sizing:border-box}
-html,body{width:100%;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:transparent;color:#1f2937}
-.card{width:100%;padding:clamp(24px,4vw,42px);border-radius:14px;background:#f5f7fa;text-align:center}
-.message{max-width:1100px;margin:0 auto;font-size:clamp(19px,2.5vw,28px);line-height:1.5;font-weight:500}
-.message strong{font-weight:700}
-.congrats{display:block;margin-top:14px;font-weight:700}
-@media(max-width:520px){.card{padding:22px 16px;border-radius:10px}.message{font-size:18px}}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    color: #1f2937;
+}
+
+.card {
+    width: 100%;
+    padding: clamp(14px, 2vw, 22px) clamp(16px, 3vw, 30px);
+    border-radius: 14px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+.message {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: clamp(18px, 2.3vw, 27px);
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.message strong {
+    font-weight: 700;
+}
+
+.congrats {
+    display: block;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+@media (max-width: 520px) {
+    .card {
+        padding: 14px 14px;
+        border-radius: 10px;
+    }
+
+    .message {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .congrats {
+        margin-top: 7px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <div class="card">
-<div class="message">
-El bimestre <strong>2A</strong> cerró el <strong>domingo 4 de octubre.</strong>
-El contenido está disponible, pero no es posible completar actividades.
-<span class="congrats">🎉 Si regularizaste la materia, ¡felicitaciones!</span>
+    <div class="message">
+        El bimestre <strong>2A</strong> cerró el <strong>domingo 4 de octubre.</strong>
+        El contenido está disponible, pero no es posible completar actividades.
+        <span class="congrats">🎉 Si regularizaste la materia, ¡felicitaciones!</span>
+    </div>
 </div>
-</div>
+
 </body>
 </html>
